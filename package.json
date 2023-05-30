@@ -1,0 +1,26 @@
+{
+  "name": "cypress-test-vo",
+  "version": "1.0.0",
+  "description": "Cypres Test VO",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:test": "cypress run"
+  },
+  "keywords": [
+    "Cypress",
+    "BDD"
+  ],
+  "author": "VO",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.13.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "prettier": "^2.8.8"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/cucumber-tests/steps-definitions"
+  }
+}
